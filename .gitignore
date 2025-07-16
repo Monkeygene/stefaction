@@ -4,9 +4,6 @@ node_modules/
 # Vite cache
 node_modules/.cache/
 
-# Build output
-dist/
-
 # Environment variables
 .env
 .env.local
