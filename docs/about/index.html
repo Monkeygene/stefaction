@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stefaction - South African Photographer & Videographer</title>
-  <script type="module" src="/src/main.js"></script>
+  <title>About | Stefaction</title>
+  <script type="module" crossorigin src="/assets/main-DKQDz2WI.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-CeMJ70oC.css">
 </head>
  <body class="bg-gray-950 text-white">
-  <header id="siteHeader" class="font-crimson fixed bg-gray-950 shadow-md w-full z-50 transition-all duration-300">
+  <nav id="siteHeader" class="font-crimson fixed shadow-md w-full z-50 transition-all duration-300 bg-gray-950">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-24 transition-all duration-300" id="navInner">
        <!-- Hamburger (mobile) -->
@@ -35,23 +36,83 @@
       <a href="/" class="block text-white px-4">Portfolio</a>
       <a href="services/" class="block text-white px-4">Services</a>
       <a href="about/" class="block text-white px-4">About</a>
+        <a href="contact/" class="block text-white px-4">Contact</a>
       <a href="blog/" class="block text-white px-4">Blog</a>
-      <a href="contact/" class="block text-white px-4">Contact</a>
     </div>
   </div>
-</header>
-<!-- Hero Section (Below Navbar) -->
-  <section id="home" class="h-screen bg-cover bg-center" style="background-image: url('src/assets/images/weddings/stefaction-wedding-prins-albert.jpeg');">
-    <div class="flex items-center justify-center h-full bg-black/30">
-      <div class="text-center px-6">
-        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Stefaction Photography</h1>
-        <p class="text-lg md:text-2xl text-white opacity-90 mb-6">Photographer & Videographer </p>
-        <a href="/services/" class="inline-block px-8 py-3 border border-white rounded-full text-white hover:bg-white hover:text-black transition duration-300">Let's Work Together</a>
+</nav>
+  <section class="h-20 md:h-24"></section>
+<section class="max-w-7xl mx-auto mb-12">
+  <div class="w-full overflow-hidden">
+    <picture>
+      <!-- Desktop (min-width: 640px = lg breakpoint in Tailwind) -->
+      <source 
+        srcset="/assets/karoo-wedding-dt-BvrexB99.jpg" 
+        media="(min-width: 640px)" 
+        type="image/jpeg">
+      
+      <!-- Default fallback (mobile and smaller devices) -->
+      <img 
+        src="/assets/karoo-wedding-mb-CGuwE5U3.jpg" 
+        alt="Black-Collared Barbet at Pretoriuskop Rest Camp in Kruger National Park perched behind thicket" 
+        class="w-full object-cover" 
+        loading="lazy">
+    </picture>
+  </div>
+</section>
+
+<!-- Hero Text Section -->
+<section class="py-12 lg:py-20">
+  <div class="container mx-auto px-4 flex flex-col items-center justify-center">
+    <div class="max-w-4xl text-center">
+      <h1 class="font-sans text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
+        Stefaction Photography
+      </h1>
+      <p class="text-md md:text-lg text-gray-300 leading-relaxed">
+        If you are looking for a photographer who can capture the essence of your special moments, you have come to the right place. Stefaction Photography is dedicated to providing you with stunning images that tell your story.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- About Stefaction Section -->
+<section class="py-16 bg-gray-950 text-white">
+  <div class="container mx-auto max-w-7xl px-4 flex flex-col md:flex-row items-center justify-between gap-10">
+    
+   <!-- Image Section -->
+    <div class="md:w-1/2 p-4">
+      <picture>
+        <!-- Desktop version (min-width: 768px = md) -->
+        <source 
+          srcset="/assets/stefaction-about-lg-BuUWRzmh.jpg" 
+          media="(min-width: 768px)" 
+          type="image/webp">
+        
+        <!-- Default (mobile) -->
+        <img 
+          src="/assets/stefaction-about-sm-5lpFkG25.jpg" 
+          alt="Eugene Booysen" 
+          class="w-full h-auto max-h-[600px] object-contain" 
+          loading="lazy">
+      </picture>
+    </div>
+
+    <!-- Text -->
+    <div class="md:w-1/2 p-4 flex items-center">
+      <div class="max-w-2xl text-center md:text-left">
+        <h2 class="font-playfair text-2xl md:text-4xl mb-6">
+        Stefan Kruger
+        </h2>
+        <p class="text-gray-300 text-base md:text-lg leading-relaxed">
+          stefan2.0kruger@gmail.com
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
        <!-- Footer -->
-<footer class="bg-white text-gray-700">
+<footer class="bg-gray-950 text-white">
     <div class="container max-w-5xl mx-auto px-6 lg:px-12 py-12">
       <!-- make it 1-col by default, switch to 3-cols at md+ -->
       <!-- center each item on small, left-align at md+ -->

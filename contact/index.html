@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stefaction - South African Photographer & Videographer</title>
+  <title>Contact | Stefaction</title>
   <script type="module" src="/src/main.js"></script>
 </head>
  <body class="bg-gray-950 text-white">
-  <header id="siteHeader" class="font-crimson fixed bg-gray-950 shadow-md w-full z-50 transition-all duration-300">
+  <nav id="siteHeader" class="font-crimson fixed shadow-md w-full z-50 transition-all duration-300 bg-gray-950">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-24 transition-all duration-300" id="navInner">
        <!-- Hamburger (mobile) -->
@@ -35,23 +35,51 @@
       <a href="/" class="block text-white px-4">Portfolio</a>
       <a href="services/" class="block text-white px-4">Services</a>
       <a href="about/" class="block text-white px-4">About</a>
+        <a href="contact/" class="block text-white px-4">Contact</a>
       <a href="blog/" class="block text-white px-4">Blog</a>
-      <a href="contact/" class="block text-white px-4">Contact</a>
     </div>
   </div>
-</header>
-<!-- Hero Section (Below Navbar) -->
-  <section id="home" class="h-screen bg-cover bg-center" style="background-image: url('src/assets/images/weddings/stefaction-wedding-prins-albert.jpeg');">
-    <div class="flex items-center justify-center h-full bg-black/30">
-      <div class="text-center px-6">
-        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Stefaction Photography</h1>
-        <p class="text-lg md:text-2xl text-white opacity-90 mb-6">Photographer & Videographer </p>
-        <a href="/services/" class="inline-block px-8 py-3 border border-white rounded-full text-white hover:bg-white hover:text-black transition duration-300">Let's Work Together</a>
-      </div>
-    </div>
-  </section>
+</nav>
+  <section class="h-20 md:h-24"></section>
+ <section class="max-w-7xl mx-auto mb-12">
+  <div class="w-full overflow-hidden">
+    <picture>
+      <!-- Desktop (min-width: 640px = lg breakpoint in Tailwind) -->
+      <source 
+        srcset="/src/assets/images/about/wedding-roads-lg.jpg" 
+        media="(min-width: 640px)" 
+        type="image/jpeg">
+      
+      <!-- Default fallback (mobile and smaller devices) -->
+      <img 
+        src="/src/assets/images/about/wedding-roads-am.jpg" 
+        alt="Black-Collared Barbet at Pretoriuskop Rest Camp in Kruger National Park perched behind thicket" 
+        class="w-full object-cover" 
+        loading="lazy">
+    </picture>
+  </div>
+</section>
+  <!-- Introductory Text -->
+<div class="max-w-4xl mx-auto px-4 text-center flex flex-col justify-center space-y-6 mt-4">
+  <h1 class="font-playfair text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-normal mb-2 lg:mb-4">
+    Contact
+  </h1>
+<p class="text-md sm:text-base md:text-lg lg:text-lg">
+  Life moves fast — but great stories deserve to be captured with care. Whether you're planning a wedding, a couple shoot, a personal brand story, or a full-scale video project, I’m here to help you turn real moments into timeless visuals. Drop me a message and let’s start planning your next shoot.
+</p>
+
+<p class="text-md sm:text-base md:text-lg lg:text-lg mt-6">
+  If you'd prefer to chat face to face, we can set up a Zoom call to discuss your vision and ideas in more detail. Whether it’s in the city or the middle of the Karoo, your story deserves to be told — beautifully.
+</p>
+<p class="mt-4 text-md sm:text-base md:text-lg lg:text-lg">
+  <a href="mailto:stefan2.0kruger@gmail.com" class="underline decoration-slate-600 hover:decoration-2 underline-offset-2 text-yellow-500">
+    Send an email
+  </a> — and let’s create something meaningful together.
+</p>
+</div>
+</section>
        <!-- Footer -->
-<footer class="bg-white text-gray-700">
+<footer class="bg-gray-950 text-white">
     <div class="container max-w-5xl mx-auto px-6 lg:px-12 py-12">
       <!-- make it 1-col by default, switch to 3-cols at md+ -->
       <!-- center each item on small, left-align at md+ -->
